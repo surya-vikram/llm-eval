@@ -1,0 +1,55 @@
+{
+    "paragraphs": [
+        {
+            "text": "The company launched its new software with features like data encryption and automatic backups. Pricing information is available, but there's no mention of customer support options.",
+            "questions": [
+                {
+                    "question": "Does it mention pricing?",
+                    "ground_truth": true,
+                    "model_a_response": true,
+                    "model_b_response": true
+                },
+                {
+                    "question": "Is customer support discussed?",
+                    "ground_truth": false,
+                    "model_a_response": false,
+                    "model_b_response": false
+                },
+                {
+                    "question": "Does it talk about data encryption?",
+                    "ground_truth": true,
+                    "model_a_response": true,
+                    "model_b_response": false
+                }
+            ]
+        },
+        {
+            "text": "Apple unveiled its latest iPhone with a revolutionary camera system and 5G capabilities. The device comes in multiple color options and is priced competitively in the smartphone market.",
+            "questions": [
+                {
+                    "question": "Does it mention 5G?",
+                    "ground_truth": true,
+                    "model_a_response": true,
+                    "model_b_response": true
+                },
+                {
+                    "question": "Are color options discussed?",
+                    "ground_truth": true,
+                    "model_a_response": true,
+                    "model_b_response": false
+                },
+                {
+                    "question": "Is pricing mentioned?",
+                    "ground_truth": true,
+                    "model_a_response": true,
+                    "model_b_response": true
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "total_paragraphs": 2,
+        "total_questions": 6,
+        "evaluation_date": "2024-01-07"
+    }
+}
