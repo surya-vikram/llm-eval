@@ -1,10 +1,10 @@
 # Model Performance Comparison Report
 
 ## Performance Summary
-| Model   |   accuracy |   precision |   recall |   f1_score |   total_correct |   total_questions |
-|:--------|-----------:|------------:|---------:|-----------:|----------------:|------------------:|
-| Model A |   1        |           1 |      1   |       1    |               6 |                 6 |
-| Model B |   0.666667 |           1 |      0.6 |       0.75 |               4 |                 6 |
+| Model   |   accuracy |   precision |   recall |   f1_score |   total_correct |   total_questions |      mcc |    kappa |
+|:--------|-----------:|------------:|---------:|-----------:|----------------:|------------------:|---------:|---------:|
+| Model A |   1        |           1 |      1   |       1    |               6 |                 6 | 1        | 1        |
+| Model B |   0.666667 |           1 |      0.6 |       0.75 |               4 |                 6 | 0.447214 | 0.333333 |
 
 ## Question-Level Breakdown
 ### Question 1: Does it mention pricing?

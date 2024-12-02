@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sklearn.metrics import matthews_corrcoef, cohen_kappa_score
 
 class ModelComparator:
     def __init__(self, questions, ground_truth, model_a_responses, model_b_responses):
@@ -44,7 +45,9 @@ class ModelComparator:
             'recall': recall,
             'f1_score': f1,
             'total_correct': sum(p == gt for p, gt in zip(predictions, self.ground_truth)),
-            'total_questions': len(self.ground_truth)
+            'total_questions': len(self.ground_truth),
+            'mcc': matthews_corrcoef(self.ground_truth, predictions),  # Matthews Correlation Coefficient
+            'kappa': cohen_kappa_score(self.ground_truth, predictions)  # Cohen's Kappa
         }
     
     def generate_detailed_comparison(self):
@@ -79,7 +82,7 @@ class ModelComparator:
         
         # 1. Bar Plot of Performance Metrics
         plt.figure(figsize=(12, 6))
-        metrics_to_plot = ['accuracy', 'precision', 'recall', 'f1_score']
+        metrics_to_plot = ['accuracy', 'precision', 'recall', 'f1_score', 'mcc', 'kappa']  # Include MCC and Kappa
         
         comparison_df.plot(x='Model', y=metrics_to_plot, kind='bar', rot=0)
         plt.title('Model Performance Comparison', fontsize=16)
