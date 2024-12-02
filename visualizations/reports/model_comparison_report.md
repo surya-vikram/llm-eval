@@ -1,10 +1,10 @@
 # Model Performance Comparison Report
 
 ## Performance Summary
-| Model   |   accuracy |   precision |   recall |   f1_score |   total_correct |   total_questions |      mcc |    kappa |
-|:--------|-----------:|------------:|---------:|-----------:|----------------:|------------------:|---------:|---------:|
-| Model A |   1        |           1 |      1   |       1    |               6 |                 6 | 1        | 1        |
-| Model B |   0.666667 |           1 |      0.6 |       0.75 |               4 |                 6 | 0.447214 | 0.333333 |
+| Model   |   accuracy |   precision |   recall |   f1_score |   total_correct |   total_questions |   mcc |   kappa |
+|:--------|-----------:|------------:|---------:|-----------:|----------------:|------------------:|------:|--------:|
+| Model A |   1        |           1 |      1   |   1        |               3 |                 3 |   1   |     1   |
+| Model B |   0.666667 |           1 |      0.5 |   0.666667 |               2 |                 3 |   0.5 |     0.4 |
 
 ## Question-Level Breakdown
 ### Question 1: Does it mention pricing?
@@ -21,19 +21,4 @@
 - **Ground Truth:** True
 - **Model A Response:** True (Correct)
 - **Model B Response:** False (Incorrect)
-
-### Question 4: Does it mention 5G?
-- **Ground Truth:** True
-- **Model A Response:** True (Correct)
-- **Model B Response:** True (Correct)
-
-### Question 5: Are color options discussed?
-- **Ground Truth:** True
-- **Model A Response:** True (Correct)
-- **Model B Response:** False (Incorrect)
-
-### Question 6: Is pricing mentioned?
-- **Ground Truth:** True
-- **Model A Response:** True (Correct)
-- **Model B Response:** True (Correct)
 

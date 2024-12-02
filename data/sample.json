@@ -22,34 +22,10 @@
                     "model_b_response": false
                 }
             ]
-        },
-        {
-            "text": "Apple unveiled its latest iPhone with a revolutionary camera system and 5G capabilities. The device comes in multiple color options and is priced competitively in the smartphone market.",
-            "questions": [
-                {
-                    "question": "Does it mention 5G?",
-                    "ground_truth": true,
-                    "model_a_response": true,
-                    "model_b_response": true
-                },
-                {
-                    "question": "Are color options discussed?",
-                    "ground_truth": true,
-                    "model_a_response": true,
-                    "model_b_response": false
-                },
-                {
-                    "question": "Is pricing mentioned?",
-                    "ground_truth": true,
-                    "model_a_response": true,
-                    "model_b_response": true
-                }
-            ]
         }
     ],
     "metadata": {
-        "total_paragraphs": 2,
-        "total_questions": 6,
-        "evaluation_date": "2024-01-07"
+        "total_paragraphs": 1,
+        "total_questions": 3
     }
 }
